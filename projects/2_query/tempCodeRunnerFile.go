@@ -5,7 +5,6 @@ import (
 	"net/http"
 )
 
-// здесь надо написать код
 
 func main() {
 	http.HandleFunc("/api/user", userHandler)
@@ -17,7 +16,6 @@ func main() {
 	}
 }
 
-// и тут тоже (если очень надо)
 func userHandler(w http.ResponseWriter, r *http.Request) {
 	name := r.URL.Query().Get("name")
 
